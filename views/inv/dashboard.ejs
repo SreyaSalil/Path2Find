@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        body{
+            margin: 5% 10%;
+        }
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+</head>
+<body>
+    <h1>Investigator's Dashboard</h1>
+    
+    <table>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Contact</th>
+          <th> ISN</th>
+          <th>Missing person's MSN</th>
+
+        </tr>
+    <% for(let inv of investigator){ %>
+      
+            <tr>
+              <td><%= inv.name %></td>
+              
+              <td><%=inv.address %></td>
+              <td><%= inv.contact %></td>
+              <td><%=inv.isn %></td>
+              <td><%= inv.MSN %></td>
+            </tr>
+    <% } %>  
+    </table>
+</body>
+</html>

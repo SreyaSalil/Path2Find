@@ -1,0 +1,65 @@
+<% layout('/layouts/boilerplate') %> 
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Register</h1>
+          <p class="lead">Register as a reporter now to find your loved one</p>
+        </div>
+      </div>
+        <div class="container">
+            <form action="/rep" method="POST" novalidate class="needs-validation">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="username" aria-describedby="emailHelp" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" name="password" id="password" required>
+                </div>
+                <div class="form-group">
+                  <label for="relation">Relation to missing person</label>
+                  <input type="text" class="form-control" id="relation" name="relation" aria-describedby="emailHelp" required>
+              </div>
+              <div class="form-group">
+                <label for="address">Address</label>
+                <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
+              </div>
+              <div class="form-group">
+                <label for="contact">Contact Number</label>
+                <input type="text" class="form-control" id="contacy" name="contact" aria-describedby="emailHelp" required>
+              </div>
+              <div class="form-group">
+                <label for="contact">RSN</label>
+                <input type="text" class="form-control" id="rsn" name="rsn" required>
+              </div>
+              <div class="form-group">
+                <label for="contact">Missing person's MSN</label>
+                <input type="text" class="form-control" id="msn" name="MSN" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <script>
+          // Example starter JavaScript for disabling form submissions if there are invalid fields
+          (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+              // Fetch all the forms we want to apply custom Bootstrap validation styles to
+              var forms = document.getElementsByClassName('needs-validation');
+              // Loop over them and prevent submission
+              var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add('was-validated');
+                }, false);
+              });
+            }, false);
+          })();
+          </script>

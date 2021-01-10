@@ -1,0 +1,30 @@
+<% layout('/layouts/boilerplate') %> 
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Reporter Dashboard</h1>
+    </div>
+  </div>
+    <div class="container">
+    
+    <% for(let rep of reporter){ %>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title"><%= rep.username%></h5>
+                <p class="card-text"><%= rep.email%></p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item text-muted">Address: <%= rep.address%></li>
+                <li class="list-group-item">Contact: <%= rep.contact%></li>
+                <li class="list-group-item">Missing case Registered: Stella Hyles</li>
+                <li class="list-group-item">Investigative agency: Rossencliff Investigative agency</li>
+                <li class="list-group-item">Status: Not found</li>
+                <li class="list-group-item"><button type="button" class="btn btn-success">Go to Missing Person Details</button></li>
+            </ul>
+            <div class="card-footer text-muted">
+                Just Now
+            </div>
+        </div>
+    <% } %>  
+    </div>
+</body>
+</html>

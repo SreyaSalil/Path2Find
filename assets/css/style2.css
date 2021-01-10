@@ -1,0 +1,253 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url(../103.jpg);
+	background-position: center;
+	background-size: cover;
+	font-family: Century Gothic;
+	margin-top: 40px;
+}
+.regform{
+	width: 800px;
+	background-color: rgb(0,0,0,6);
+	margin: auto;
+	color: white;
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+	border-radius: 10px 10px 10px 10px;
+}
+.main{
+	background-color: rgb(0,0,0,0.5);
+	width: 800px;
+	margin: auto;
+}
+form{
+	padding: 10px;
+}
+#name{
+	width: 100%;
+	height: 100px;
+}
+.name{
+	margin-left: 25px;
+	margin-top: 30px;
+	width:125px;
+	color: white;
+	font-size: 18px;
+	font-weight: 700;
+}
+.firstname{
+	position: relative;
+	left: 200px;
+	top: -37px;
+	line-height: 40px;
+	border-radius: 6px;
+	padding:0 22px;
+	font-size: 16px;
+}
+.lastname{
+	position: relative;
+	left: 417px;
+	top: -80px;
+	line-height: 40px;
+	border-radius: 6px;
+	padding: 0 22px;
+	font-size: 16px;
+	color: #555;
+}
+.firstlabel{
+	position: relative;
+	color: #E5E5E5;
+	text-transform: capitalize;
+	font-size: 14px;
+	left: 203px;
+	top: -45px;
+}
+.lastlabel{
+	position: relative;
+	color: #E5E5E5;
+	text-transform: capitalize;
+	font-size: 14px;
+	left: 492px;
+	top: -76px;
+}
+#email{
+	width: 100%;
+	height: 100px;
+}
+.email{
+	position: relative;
+	left: 200px;
+	top: -37px;
+	line-height: 40px;
+	border-radius: 6px;
+	padding:0 22px;
+	font-size: 16px;
+}
+#password{
+	width: 100%;
+	height: 100px;
+}
+.password{
+	position: relative;
+	left: 200px;
+	top: -37px;
+	line-height: 40px;
+	border-radius: 6px;
+	padding:0 22px;
+	font-size: 16px;
+}
+#address{
+	width: 100%;
+	height: 100px;
+}
+#doorno{
+	width: 100%;
+	height: 100px;
+}
+.doorno{
+	position: relative;
+	left: 200px;
+	top: -37px;
+	line-height: 30px;
+	border-radius: 6px;
+	padding:0 -30px;
+	font-size: 16px;
+}
+.labeldoorno{
+	position: relative;
+	color: #E5E5E5;
+	text-transform: capitalize;
+	font-size: 14px;
+	left: 203px;
+	top: -45px;
+}
+#streetno{
+	width: 100%;
+	height: 100px;
+}
+.streetno{
+	position: relative;
+	left: 370px;
+	top: -70px;
+	line-height: 30px;
+	border-radius: 6px;
+	padding:0 -30px;
+	font-size: 16px;
+}
+.labelstreetno{
+	position: relative;
+	color: #E5E5E5;
+	text-transform: capitalize;
+	font-size: 14px;
+	left: 430px;
+	top: -79px;
+}
+.city{
+	position: relative;
+	left: 608px;
+	top: -105px;
+	line-height: 30px;
+	border-radius: 6px;
+	padding:0 -30px;
+	font-size: 16px;
+}
+.labelcity{
+	position: relative;
+	color: #E5E5E5;
+	text-transform: capitalize;
+	font-size: 14px;
+	left: 674px;
+	top: -115px;
+}
+.state{
+	position: relative;
+	left: 888px;
+	top: -139px;
+	line-height: 30px;
+	border-radius: 6px;
+	padding:0 -30px;
+	font-size: 16px;
+}
+.labelstate{
+	position: relative;
+	color: #E5E5E5;
+	text-transform: capitalize;
+	font-size: 14px;
+	left: 920px;
+	top: -147px;
+}
+.country{
+	position: relative;
+	left: 1105px;
+	top: -173px;
+	line-height: 30px;
+	border-radius: 6px;
+	padding:0 -30px;
+	font-size: 16px;
+}
+.labelcountry{
+	position: relative;
+	color: #E5E5E5;
+	text-transform: capitalize;
+	font-size: 14px;
+	left: 1142px;
+	top: -174px;
+}
+#contactno{
+	width: 100%;
+	height: 100px;
+}
+#contactnoone{
+	width: 100%;
+	height: 100px;
+}
+.contactnoone{
+	position: relative;
+	left: 200px;
+	top: -37px;
+	line-height: 30px;
+	border-radius: 6px;
+	padding:0 -30px;
+	font-size: 16px;
+}
+.labelcontactnoone{
+	position: relative;
+	color: #E5E5E5;
+	text-transform: capitalize;
+	font-size: 14px;
+	left: 200px;
+	top: -46px;
+}
+.contactnotwo{
+	position: relative;
+	left: 400px;
+	top: -70px;
+	line-height: 30px;
+	border-radius: 6px;
+	padding:0 -30px;
+	font-size: 16px;
+}
+.labelcontactnotwo{
+	position: relative;
+	color: #E5E5E5;
+	text-transform: capitalize;
+	font-size: 14px;
+	left: 478px;
+	top: -70px;
+}
+button{
+	background-color: #3BAF9F;
+	display: block;
+	margin: 20px 0px 0px 20px;
+	text-align: center;
+	border-radius: 12px;
+	border:2px solid #366473;
+	padding: 14px 110px;
+	outline: none;
+	color: white;
+	cursor: pointer;
+	transition: 0.25px;
+}

@@ -1,0 +1,172 @@
+<% layout('/layouts/boilerplate') %> 
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Register Missing Person</h1>
+    <p class="lead">Register the  missing person</p>
+  </div>
+</div>
+  <form action="/miss" method="POST" novalidate class="needs-validation">
+    <div class="container">
+      <h1><strong>Missing Person</strong></h1>
+      <br>
+      <p>Kindly fill the fields mentioned below</p>
+      <hr>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp" required>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="inputState"><b>Gender</b></label>
+          <input type="text" class="form-control" id="gender" name="gender" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputState"><b>Age</b></label>
+          <input type="text" class="form-control" id="age" name="age" required>
+        </div>
+        <div class="form-group col-md-4">
+          <i class="far fa-calendar-alt"></i>
+          <label for="inputState"><b>Date Of Birth</b></label>
+          <input type="date" class="form-control" id="inputdateofbirth" name="inputdateofbirth" placeholder="DD/MM/YYYY" required>
+        </div>
+      </div>
+      <br>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="inputState"><b>Languages</b></label>
+          <input type="text" class="form-control" id="inputlanguage" name="languages" required>
+        </div>
+
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="inputState"><b>Physical Description</b></label>
+          <input type="text" class="form-control" id="inputlanguage" name="phyCond" required>
+        </div>
+
+      </div>
+
+      <!-- <p>
+        <b>
+          <h5>Apparel</h5>
+        </b>
+      </p>
+      <br>
+
+
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <i class="fas fa-tshirt"></i>
+          <label for="inputState"><b>Article</b></label>
+          <input type="text" class="form-control" id="inputarticle">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputState"><b>Color</b></label>
+          <input type="text" class="form-control" id="inputcolor">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <input type="text" class="form-control" id="inputcolor">
+        </div>
+        <div class="form-group col-md-4">
+          <input type="text" class="form-control" id="inputcolor">
+        </div>
+      </div>
+      <br>
+      <br> -->
+
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <i class="far fa-calendar-alt"></i>
+          <label for="inputState"><b>Date Missing</b></label>
+          <input type="date" class="form-control" id="inputdatemissing" name="dateMissing" required>
+        </div>
+        <div class="form-group col-md-4">
+          <i class="fas fa-clock"></i>
+          <label for="inputState"><b>Missing Time</b></label>
+          <input type="date" class="form-control" id="inputmissingtime" name="missingTime" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <i class="far fa-calendar-alt"></i>
+          <label for="inputState"><b>Registration Date</b></label>
+          <input type="date" class="form-control" id="inputregistrationdate" name="regDate" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputState"><b>Status</b></label>
+          <input type="Boolean" class="form-control" id="inputstatus" name="status" required>
+        </div>
+      </div>
+
+
+      <br>
+      <br>
+      <p>
+        <b>
+          <h5>Last Seen</h5>
+        </b>
+      </p>
+      <br>
+      <i class="fas fa-clock"></i>
+      <label for="inputState"><b>Address</b></label>
+      <input type="text" class="form-control" id="inputaddress" name="lastSeen" required>
+
+
+      <br>
+      <br>
+      <i class="fas fa-notes-medical"></i>
+      <label for="inputState"><b>Medical Conditions</b></label>
+      <input type="text" class="form-control" id="inputmedicalconditions" name="medCond" required>
+
+      <br>
+      <br>
+      
+      <label for="inputState"><b>Enter Picture url</b></label>
+      <input type="text" class="form-control" id="img" name="img" required>
+      <br>
+      <br>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="inputState"><b>ISN</b></label>
+          <input type="text" class="form-control" id="inputisn" name="isn" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputState"><b>MSN</b></label>
+          <input type="text" class="form-control" id="inputmsn" name="msn" required>
+        </div>
+      </div>
+
+     <hr>
+      <p>By submitting this form you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+      <button type="submit" class="registerbtn">Submit</button>
+    </form>
+    </div>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
+

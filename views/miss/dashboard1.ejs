@@ -1,0 +1,48 @@
+<% layout('/layouts/dashboardBoiler') %> 
+<br>
+    <h1>Missing person's details</h1>
+    <br>
+    <table>
+        <tr>
+          <th>Name</th>
+          <th>Gender</th>
+          <th>Age</th>
+          <th>DOB</th>
+          <th>Languages</th>
+          <th>Physical Condition</th>
+          <th>Date Missing</th>
+          <th>Missing time</th>
+          <th>Registration Date</th>
+          <th>Status</th>
+          <th>Last Seen</th>
+          <th>Medical Condition</th>
+          <th>Image</th>
+          <th>ISN</th>
+          <th>MSN</th>
+          <th>Go to Page</th>
+
+        </tr>
+    <% for(let m of miss1){ %>
+      
+            <tr>
+              <td><%= m.name %></td>
+              <td><%= m.gender %></td>
+              <td><%= m.age %></td>
+              <td><%= m.inputdateofbirth %></td>
+              <td><%= m.languages %></td>
+              <td><%= m.phyCond %></td>
+              <td><%= m.dateMissing %></td>
+              <td><%= m.missingTime %></td>
+              <td><%= m.regDate %></td>
+              <td><%= m.status %></td>
+              <td><%= m.lastSeen %></td>
+              <td><%= m.medCond %></td>
+              <td><a href="<%= m.img %>"> image</a></td>
+              <td><%= m.isn %></td>
+              <td><%= m.msn %></td>
+              <td><a href="/miss/<%= m._id %>">Go to Page</a></td>
+            </tr>
+    <% } %>  
+    </table>
+
+    

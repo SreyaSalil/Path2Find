@@ -1,0 +1,25 @@
+<% layout('/layouts/boilerplate') %> 
+<div class="container">
+    <h1>Finders Dashboard</h1>
+    
+    <table>
+        <tr>
+          <th>Name</th>
+          <th>Found person</th>
+          <th>Address</th>
+          <th>Contact</th>
+          
+
+        </tr>
+    <% for(let finder of finders){ %>
+      
+            <tr>
+              <td><%= finder.name %></td>
+              <td><%= finder.foundMSN %></td>
+              <td><%=finder.address %></td>
+              <td><%= finder.contact %></td>
+             
+            </tr>
+    <% } %>  
+    </table>
+</div>
